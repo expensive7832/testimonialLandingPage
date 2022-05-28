@@ -1,0 +1,137 @@
+@import '_variable.scss';
+
+*{
+    padding: 0!important;
+    margin: 0!important;
+    box-sizing: border-box;
+}
+
+
+#header .collapse .nav-item .signup{
+    background-color: $signup_btn;
+    color: #fff;
+    border-radius: .4rem;
+}
+#header .collapse .nav-item .nav-link{
+   font-weight: 500;
+}
+.bottomHeader{
+    border: 2px solid darken($white, 5%);
+}
+.hero{
+  &__text{
+    font-size: 3rem;
+    
+  }
+  &__img{
+   width: 100%;
+      height: auto;
+      object-fit: cover;
+  }
+}
+
+.secondbanner{
+    background-color: $first_bg;
+    height: 100%;
+    &__img{
+           width: 100%;
+           object-fit: cover;
+           height: 80vh;
+          
+       }
+       &__content{
+           width: 25%;
+           margin: auto;
+       }
+}
+
+.testimonial {
+    &__img--pic{
+
+    }
+    &__service{
+        font-size: .7rem;
+        background-color: lighten(lightblue, 15%);
+        border-radius: .3rem;
+    }
+    &__text{
+        font-size: .9rem;
+    }
+}
+
+.thirdbanner{
+    background-color: #FFF8F5;
+    height: 100%;
+    &__img{
+           width: 100%;
+           object-fit: cover;
+           
+       }
+       &__content{
+           width: 25%;
+           margin: auto;
+       }
+       &__client{
+           border:1px solid $signup_btn;
+       }
+       
+}
+
+.footer{
+    background-color: #25201D;
+    position: relative;
+    height: fit-content;
+    &__mobile{
+        position: relative;
+        top: -5vh;
+        
+    }
+    &__bottom ul li{
+        list-style-type: none;
+    }
+}
+.footer input {
+    cursor: text;
+    background-color: inherit;
+    margin: 0em;
+    padding: 1px 2px;
+    border-width: 0px;
+    border-color: -internal-light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+    border-image: initial;
+}
+.footer input::placeholder {
+    color: #FFF;
+    font-weight: 600;
+    padding: 0 1rem;
+}
+
+@include breakpoint(576px){
+    .hero{
+        &__text{
+          font-size: 1.5rem;
+         margin: 0 2rem!important;
+        }
+        
+      } 
+      .secondbanner{
+        background-color: $first_bg;
+        &__img{
+               width: 100%;
+               object-fit: cover;
+           }
+           &__content{
+               width: 100%;
+               margin-top: 3rem;
+               
+           }
+    }
+    .thirdbanner{
+        
+           &__content{
+               width: 75%;
+               margin: auto;
+           }
+           
+           
+    }
+}

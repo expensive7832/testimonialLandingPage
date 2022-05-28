@@ -1,0 +1,10 @@
+$signup_btn: #FF5C00;
+$first_bg: #222222;
+$testimonial_job: #6BC669;
+$white: #fff;
+
+@mixin breakpoint($px) {
+    @media (max-width: $px) {
+        @content
+    }
+}
